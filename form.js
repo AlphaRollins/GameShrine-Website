@@ -1,3 +1,11 @@
+/*  git init: crea un archivo oculto que almacena las versiones de nuestro proyecto
+    git -v: version de git
+    git add .: agrega todos los cambios
+    git commit -m "msg": git commit msg
+    git push -u origin master: 
+*/
+
+
 const formulario = document.getElementById("formulario")
 
 formulario.addEventListener("submit", function(){
@@ -16,3 +24,4 @@ formulario.addEventListener("submit", function(){
     console.log("El numero de telefono es "+PhoneNumber)
 
 })
+
