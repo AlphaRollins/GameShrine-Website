@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - GameShrine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>GameShrine</h1>
+        <section class="headerContent">
+            <div class="mainSearch">
+                <input type="search" name="search" id="headerSearch">
+                <button class="searchBtn">
+                    <img src="icons/search.svg" alt="search icon">
+                </button>
+            </div>
+        </section>
+
+        <div class="userHeader">
+            <a href=""><button>Log In</button></a>
+            <a href="signUp.html"><button>Sign Up</button></a>
+        </div>
+    </header>
+
+    <main>
+        <section class="headerLinks">
+            <nav class="navBar">
+                <ul>
+                    <a href="index.html"><li>Home</li></a>
+                    <a href="products.html"><li>Products</li></a>
+                    <a href=""><li>About us</li></a>
+                    <a href=""><li>Support</li></a>
+                </ul>
+            </nav>
+            <a href="">
+                <button id="cartBtn">
+                    <img src="icons/shopping-cart.svg" alt="shopping icon">
+                </button>
+            </a>
+        </section>
+
+        <section class="mainSgnUp">
+            <div>
+                <h2>Create an account</h2>
+            </div>
+            <form id="formulario">
+                <div class="signUpSection">
+                    <div>
+                        <h4>Username</h4>
+                    <input type="text" name="Username" id="Username" required>
+                    </div>
+    
+                    <div>
+                        <h4>Email</h4>
+                        <input type="email" name="Email" id="Email" required>
+                    </div>
+                    
+                    <div>
+                        <h4>Password</h4>
+                        <input type="password" name="Password" id="Password" required>
+                    </div>
+                    
+                    <div>
+                        <h4>Full Name</h4>
+                        <input type="text" name="FullName" id="FullName" required>
+                    </div>
+                    
+                    <div>
+                        <h4>Address</h4>
+                        <input type="text" name="Address" id="Address" required>
+                    </div>
+                    
+                    <div>
+                        <h4>Phone Number</h4>
+                        <input type="tel" name="PhoneNumber" id="PhoneNumber" required>
+                    </div>
+                    
+    
+                    <div class="signUpButton">
+                        <input type="submit" value="Create account">
+                    </div>
+    
+                </div>
+            </form>
+            
+        </section>
+
+    </main>
+    
+    
+    <footer>
+        <div class="footerIcons">
+            <a href=""><img src="icons/x-twitter.svg" alt="x"></a>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="icons/youtube.svg" alt="youtube"></a>
+            <a href=""><img src="icons/instagram.svg" alt="instagram"></a>
+            <a href=""><img src="icons/github.svg" alt="github"></a>
+        </div>
+        
+    </footer>
+
+    <script src="form.js"></script>
+</body>
+</html>
