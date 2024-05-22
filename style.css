@@ -458,23 +458,81 @@ h2{
 
 
 footer{
-    height: 80px;
+    height: 380px;
     background-color: #1f2937;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
 }
 
-
-.footerIcons img{
-    height: 30px;
-}
-
-
-.footerIcons{
+.firsSecFooter{
+    width: 100%;
+    height: 45%;
     display: flex;
-    gap: 100px;
+    justify-content: center;
+    align-items: center;
+    color: #d2d7df;
 }
+
+.footerContactUs,
+.footerCustomerService,
+.footerAboutUs{
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    padding-top: 35px;
+}
+
+.footerContactUs h4,
+.footerCustomerService h4,
+.footerAboutUs h4{
+    font-size: 18px;
+    font-weight: 800;
+    width: fit-content;
+    padding-bottom: 20px;
+
+}
+
+.footerContactUs li,
+.footerCustomerService li,
+.footerAboutUs li{
+    font-size: 13px;
+    width: fit-content;
+    list-style: none;
+    padding-bottom: 5px;
+}
+
+.footerListTXT{
+    padding-left: 0%;
+}
+
+.secondSecFooter{
+    height: 35%;
+    width: 80%;
+    background-color: #3772ff;
+    margin-top: 10px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footerSecTXT{
+    width: fit-content;
+    color: #ffffff;
+}
+
+
+.footerIMG{
+    display: flex;
+    gap: 30px;
+}
+
+.footerIMG img{
+    height: 25px;
+}
+
 
 
 @media (max-width:1024px) {
@@ -534,6 +592,7 @@ footer{
         width: 85%;
     }
 
+
 }
 
 @media (max-width: 424px) {
@@ -588,14 +647,37 @@ footer{
         margin-bottom: 20px;
     }
 
-    .footerIcons{
-        gap: 50px;
-    }
-
 
     .signUpSection{
         width: 300px;
     }
+
+    footer{
+        height: max-content;
+    }
+    .footerContactUs, .footerCustomerService, .footerAboutUs {
+        width: max-content;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .firsSecFooter{
+        flex-direction: column;
+        align-items: flex-start;
+        width: max-content;
+    }
+    .secondSecFooter{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .footerSecTXT{
+        padding-top: 10px;
+        text-align: center;
+    }
+    .footerIMG{
+        padding-bottom: 10px;
+    }
+
 }
 
 @media (max-width:1440px) {
@@ -613,5 +695,33 @@ footer{
 
     h2{
         padding-bottom: 50px;
+    }
+}
+
+@media (max-width:425px) {
+    footer{
+        height: max-content;
+    }
+    .footerContactUs, .footerCustomerService, .footerAboutUs {
+        width: max-content;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .firsSecFooter{
+        flex-direction: column;
+        align-items: flex-start;
+        width: max-content;
+    }
+    .secondSecFooter{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .footerSecTXT{
+        padding-top: 10px;
+        text-align: center;
+    }
+    .footerIMG{
+        padding-bottom: 10px;
     }
 }
