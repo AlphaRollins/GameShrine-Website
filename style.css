@@ -13,8 +13,13 @@ https://coolors.co/1f2937-ffffff-d2d7df-3772ff-ed254e
 }
 
 
-h1{
+header a{
+    text-decoration: none;
+}
+
+header h1{
     font-weight: 700;
+    color: #ffffff;
 }
 
 
@@ -25,7 +30,7 @@ header{
     height: 90px;
     background-color: #1f2937;
     align-items: center;
-    color:#d2d7df;
+    color:#ffffff;
 }
 
 
@@ -49,11 +54,10 @@ h2{
 .userHeader button{
     background-color: #3772ff;
     width: 80px;
-    height: 25px;
-    border: 1px solid #1f2937;
+    height: 30px;
+    border: 1px solid #3772ff;
     border-radius: 5px;
-    color: #1f2937;
-    font-weight: 700;
+    color: #ffffff;
     cursor: pointer;
 }
 
@@ -62,6 +66,16 @@ h2{
     background-color: hsl(222, 100%, 81%);
 }
 
+#signUpBtn{
+    background-color: #ffffff;
+    color: #1f2937;
+    font-weight: 700;
+    border: #ffffff;
+}
+
+#signUpBtn:hover{
+    background-color: hsl(215, 28%, 57%);
+}
 
 
 .mainSearch{
@@ -74,7 +88,7 @@ h2{
 
 #headerSearch{
     width: 350px;
-    height: 30px;
+    height: 35px;
     border-radius: 5px;
     border: 1px solid #3772ff;
 
@@ -82,13 +96,14 @@ h2{
 
 
 .searchBtn{
-    height: 30px;
+    height: 35px;
     width: 30px;
     background-color: #3772ff;
     border: 1px solid #3772ff;
-    border-radius: 5px;
-    margin-left: 2px;
+    margin-left: -5px;
     cursor: pointer;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
 
 }
 
@@ -168,6 +183,70 @@ h2{
     display: flex;
 }
 
+.welcome{
+    height: calc(100vh - 130px);
+    background-color: black;
+    position: relative;
+    background-image: url(indexIMG/mainIMG.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    isolation: isolate;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome::after {
+    content: '';
+    position: absolute;
+    background: black;
+    z-index: -1;
+    inset: 0;
+    opacity: .7;
+    
+}
+
+.welcomeText{
+    color: #ffffff;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 90px;
+    align-items: center;
+    text-align: center;
+}
+
+.welcomeText h2{
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 800;
+    padding-bottom: 0%;
+
+}
+
+.welcomeText p {
+    font-size: 18px;
+}
+
+#justifyMainPageTXT{
+    text-align: justify;
+}
+
+.callActionBtn{
+    height: 40px;
+    width: 150px;
+    border-radius: 5px;
+    background-color: #3772ff;
+    color: #ffffff;
+    border: 0px;
+}
+
+.callActionBtn:hover{
+    cursor: pointer;
+    background-color: #9ebbff;
+}
+
+
 
 .recommendationsSection{
     height: 550px;
@@ -194,7 +273,7 @@ h2{
     justify-content: space-evenly;
     flex-direction: column;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px 5px hsl(217, 17%, 75%);
+    box-shadow: 0px 0px 20px 0px hsl(217, 17%, 75%);
 }
 
 
@@ -224,11 +303,15 @@ h2{
 
 .randomItems{
     height: 550px;
-    background-color: #d2d7df;
+    background-color: #3772ff;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+}
+
+.randomItems h2{
+    color: #ffffff;
 }
 
 
@@ -446,6 +529,11 @@ footer{
         width: 360px;
     }
 
+    .welcomeText{
+        gap: 60px;
+        width: 85%;
+    }
+
 }
 
 @media (max-width: 424px) {
@@ -453,7 +541,7 @@ footer{
         height: auto;
         flex-wrap: wrap;
         flex-direction: column;
-        gap: 20px;
+        gap: 13px;
     }
 
     h1{
@@ -478,6 +566,12 @@ footer{
 
     #cartBtn{
         margin-right: 8px;
+    }
+
+
+    .welcomeText{
+        gap: 60px;
+        width: 85%;
     }
 
     .imgContainerBox {
