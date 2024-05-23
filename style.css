@@ -31,6 +31,21 @@ header{
     background-color: #1f2937;
     align-items: center;
     color:#ffffff;
+
+}
+
+
+
+.animation{
+    transform: translateY(-50px);
+    opacity: 0%;
+    transition: .3s;
+}
+
+.animationAfter{
+    transform: translateY(0px);
+    opacity: 100%;
+
 }
 
 
@@ -247,6 +262,19 @@ h2{
 }
 
 
+.animationDos{
+    transform: scale(.1);
+    opacity: 0%;
+}
+
+.animationDosAfter{
+    transform: scale(1);
+    opacity: 100%;
+    transition: .5s;
+
+}
+
+
 
 .recommendationsSection{
     height: 550px;
@@ -257,12 +285,41 @@ h2{
     align-items: center;
 }
 
+.firstAnimation{
+    font-size: 2.5rem;
+    transition: .5s;
+    transform: translateY(50px);
+    opacity: 0%;
+}
+
+.animationN1{
+    font-size: 1.5rem;
+    animation-delay: .3s;
+    transform: translateY(0px);
+    opacity: 100%;
+}
+
+
+
 
 .divBoxes{
     display: flex;
     gap: 50px;
 }
 
+.divBoxesAnim1{
+    transform: scale(.1);
+    opacity: 0%;
+    transition: .3s;
+    transition-delay: .3s;
+}
+
+.animationN2{
+    transform: scale(1);
+    opacity: 100%;
+    transition: .3s;
+    transition-delay: .3s;
+}
 
 .imgContainerBox{
     height: 350px;
@@ -725,3 +782,6 @@ footer{
         padding-bottom: 10px;
     }
 }
+
+
+

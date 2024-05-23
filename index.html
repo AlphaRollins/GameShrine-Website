@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GameShrine</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <body>
 
-    <header>
+    <header class="animation">
         <a href="index.html" id="titleWebPage"><h1>GameShrine</h1></a>
         <section class="headerContent">
             <div class="mainSearch">
@@ -26,7 +27,7 @@
     </header>
 
     <main>
-        <section class="headerLinks">
+        <section class="headerLinks animation" >
             <nav class="navBar">
                 <ul>
                     <a href=""><li style="color: #1f2937;">Home</li></a>
@@ -41,7 +42,7 @@
                 </button>
             </a>
         </section>
-        <section class="welcome">
+        <section class="welcome animationDos">
             <div class="welcomeText">
                 <h2>Welcome to GameShrine</h2>
                 <p id="justifyMainPageTXT">At GameShrine, we're passionate about the world of digital and animated entertainment. Here, you'll find a vibrant community of enthusiasts like you, sharing and discovering the latest in video games, anime, and consoles. Our goal is to provide you with the best shopping experience and the most up-to-date information so you can always stay on top of your favorite hobbies.</p>
@@ -55,8 +56,8 @@
         </section>
 
         <section class="recommendationsSection">
-            <h2>Recommendations</h2>
-            <div class="divBoxes">
+            <h2 id="target-section2" class="firstAnimation">Recommendation</h2>
+            <div class="divBoxes divBoxesAnim1" id="target-section3">
                 <div class="imgContainerBox">
                     <img src="indexIMG/eldenRingPS5.png" alt="elden ring ps5">
                     <a href="">View</a>
@@ -74,8 +75,8 @@
         </section>
 
         <section class="randomItems">
-            <h2>Random Items</h2>
-            <div class="divBoxes">
+            <h2 class="firstAnimation" id="target-section5">Random Items</h2>
+            <div class="divBoxes divBoxesAnim1" id="target-section4">
                 <div class="imgContainerBox">
                     <img src="indexIMG/berserk.jpg" alt="berserk">
                     <a href="">View</a>
@@ -137,5 +138,6 @@
         
     </footer>
 
+    <script src="functions.js"></script>
 </body>
 </html>
